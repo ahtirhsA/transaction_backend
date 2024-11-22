@@ -91,7 +91,7 @@ app.post('/register',async (req,res)=>{
 
     const verifiyTkn=jwt.sign(payload,process.env.IDT_SECRET)
 
-    const verificationURL=`http://localhost:3004/verify-email?token=${verifiyTkn}`
+    const verificationURL=`https://transaction-backend-qpm8.onrender.com/verify-email?token=${verifiyTkn}`
 
 
     const insrtUser=`
